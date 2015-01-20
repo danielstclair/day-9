@@ -23,10 +23,10 @@ String.prototype.rotate = function(number){
 };
 
 var alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var alphLow = (alph+alph.toLowerCase()).split("");
+var startN = (alph.rotate(num)+alph.rotate(num).toLowerCase()).split("");
 
 var rot13 = function(str, num){
-	var alphLow = (alph+alph.toLowerCase()).split("");
-	var startN = (alph.rotate(num)+alph.rotate(num).toLowerCase()).split("");
 	var rot13_dict= {};
 
 	alphLow.forEach(function(cv,index){rot13_dict[cv] = startN[index];});
@@ -46,23 +46,23 @@ var rot13 = function(str, num){
 
 
 // Number 5
-students = new Array("Daniel", "Erika", "Jacob", "Paul", "Alex", "Hugh", "Gabe", "Charlie", "Travis", "Ryan")    
+students = new Array("Daniel", "Erika", "Jacob", "Paul", "Alex", "Hugh", "Gabe", "Charlie", "Travis", "Ryan");    
 console.log(students);
 function getStudent() {
     var random = Math.floor(Math.random() * students.length);
     return students.splice(random, 1)[0]; 
-};
+}
 pair = new Array(getStudent(), getStudent());
 var studentsLeft = students;
 
 console.log(pair);
-console.log(studentsLeft)
+console.log(studentsLeft);
 
 while (studentsLeft.length > 2){
 	getStudent();
-	var newPair = new Array(getStudent(), getStudent())
+	var newPair = new Array(getStudent(), getStudent());
 	console.log(newPair);
-	console.log(studentsLeft)
+	console.log(studentsLeft);
 }
 
 
@@ -74,7 +74,7 @@ while (studentsLeft.length > 2){
 // Number 6
 function dash(string) {
 	return string.split("").join("-");
-};
+}
 
 
 
@@ -85,7 +85,7 @@ function dash(string) {
 // Number 7 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 function dash2(string) {
 	return string.slice("-");
-};
+}
 
 
 
@@ -95,7 +95,7 @@ function dash2(string) {
 
 // number 8
 function dash2(string, string2) {
-	var both = string + "-" + string2
+	var both = string + "-" + string2;
 	return both;
 }
 
