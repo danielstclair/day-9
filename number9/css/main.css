@@ -1,0 +1,31 @@
+body {
+  background-color: #44473F;
+  color: #B5DEFF;
+  font-family: sans-serif; }
+
+.banner {
+  background-image: url(http://upload.wikimedia.org/wikipedia/en/8/82/Las_Vegas_slot_machines.jpg);
+  margin: 0 auto;
+  height: 300px;
+  text-align: center; }
+  .banner h1 {
+    font-size: 3em;
+    font-weight: 300;
+    text-shadow: #bababa 4px 2px 4px; }
+
+.body div {
+  width: 49%;
+  height: 250px;
+  color: black; }
+.body .pic1 {
+  background-image: url(https://www.playframework.com/documentation/2.0/resources/manual/gettingStarted/images/consoleEval.png); }
+.body .pic2 {
+  background-image: url(http://cdn2.business2community.com/wp-content/uploads/2013/01/second-chance-checking-accounts.jpg);
+  color: white;
+  background-repeat: no-repeat; }
+.body .pic3 {
+  background-image: url(http://www.northernsound.ie/wp-content/uploads/2013/09/FUN2.jpg);
+  height: 320px;
+  background-repeat: no-repeat; }
+
+/*# sourceMappingURL=main.css.map */
